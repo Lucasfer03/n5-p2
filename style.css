@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+}
+
+body {
+  --bg-color: #FFFFFF;
+  --text-color: #323238;
+  --fill-color: #323238;
+  --bg-card-color: #E1E1E6;
+  --bg-card-secondary-color: #02799D;
+  
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.dark {
+  --text-color: white;
+  --fill-color: #C4C4CC;
+  --bg-card-color: #29292E;
+
+}
+
+main {
+  height: 100vh;
+  display: flex;
+ justify-content: space-evenly;
+}
+
+#left {
+  justify-content: center;
+  align-self: center;
+}
+
+.right {
+  justify-content: center;
+  align-self: center;
+}
+
+#timer {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12.6166rem;
+  line-height: 14.8rem;
+  text-transform: uppercase;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  gap: 4.0rem;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  gap: 4.0rem;
+  flex-wrap: wrap;
+}
+
+.dark-white{
+  display: flex;
+  margin-top: 6rem;
+  align-items: flex-start;
+}
+
+.florest,
+.rain,
+.house,
+.fireplace {
+  background-color: var(--bg-card-color);
+  width: 138px;
+  height: 152px;
+  left: 746px;
+  top: 380px;
+  border-radius: 24px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.images :hover {
+  background-color: var(--bg-card-secondary-color);
+ transition: all 200ms;
+ transform: scale(1.2);
+ 
+}
+.rain svg path {
+    fill: var(--fill-color)
+}
+
+black-mode .rain svg path,
+.fireplace svg path,
+.florest svg path,
+.house svg path,
+.play svg path,
+.stop svg path,
+.addTime svg path,
+.removeTime svg path{
+  fill: var(--fill-color)
+}
